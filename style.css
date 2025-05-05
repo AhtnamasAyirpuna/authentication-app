@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter';
+}
+
+h2 {
+  font-size: 50px;
+  text-align: left;
+  background: linear-gradient(90deg, white, rgb(230, 113, 224), purple);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  color: white;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 18px;
+  background-color: rgb(58, 6, 58);
+  padding: 16px;
+}
+
+input {
+  padding: 8px;
+  border-style: double;
+  border-radius: 8px;
+  width: 90%;
+  font-size: 14px;
+}
+
+button {
+  background-color: rgb(172, 90, 172);
+  color: white;
+  width: 90%;
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: rgb(209, 62, 209);
+}
+
+#toggle-link {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+p {
+  margin-top: 0px;
+  text-align: center;
+  display: block;
+}
+
+#cover {
+  display: none;
+  flex: 1;
+  overflow: hidden;
+  flex-direction: column;
+}
+
+#cover img {
+  flex: 1;
+  max-width: 100%;
+}
+
+span {
+  color: pink;
+}
+
+#paragraph {
+  text-align: left;
+  display: flex;
+}
+
+@media only screen and (min-width: 1024px) {
+  main {
+    padding: 40px;
+    gap: 20px;
+  }
+
+  h2 {
+    font-size: 50px;
+    text-align: left;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  button {
+    font-size: 18px;
+    padding: 10px;
+  }
+
+  #cover {
+    display: flex;
+  }
+}
